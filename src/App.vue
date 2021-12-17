@@ -16,7 +16,6 @@ export default {
 </script>
 
 <style>
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap")
 
 html, body {
