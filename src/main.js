@@ -13,7 +13,7 @@ Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 
 Vue.use(VueGtag, {
-  config: { id: process.ENV.VUE_APP_GTAG}
+  config: { id: "G-MPK44X96M7" }
 });
 
 new Vue({
