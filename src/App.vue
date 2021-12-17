@@ -13,6 +13,7 @@ export default {
     Main
   }
 }
+
 </script>
 
 <style>
