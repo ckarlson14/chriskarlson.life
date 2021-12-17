@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
 
 <style>
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap")
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background-color: whitesmoke;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*display: inline-flex;*/
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
+
+h5{
+  size: 2.5rem;
+  margin-top: 8px !important;
+  color: #e853e7;
+  font-weight: 550 !important;
+}
+
+.titles{
+  width:70%;
+  text-align: left;
+}
+
 </style>
