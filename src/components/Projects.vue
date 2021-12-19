@@ -12,6 +12,11 @@
               <img :src="item.logoFile" class="logo">
               <span class="title">
                 {{ item.name }}
+                <span v-for="(social, i) in item.social"
+                     :key="i"
+                 class="m-1">
+                  <a :href="social.url" target="_blank" :class="social.icon"></a>
+                </span>
               </span>
             </b-card-text>
             <div class="text-muted ml-3 body">{{ item.description }}</div>
@@ -44,6 +49,7 @@ export default {
         subtitle: "Alarm clock for friends",
         site: "App Store",
         url: "https://apps.apple.com/us/app/wewake/id1495745797",
+        social: [{url: "https://instagram.com/wewakeapp", icon: "fa fa-instagram"}, {url: "https://twitter.com/wewakeapp", icon: "fa fa-twitter"}],
         description:
             "iOS app",
         skills: ["devicon-swift-plain-wordmark colored","devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored","devicon-sqlalchemy-original-wordmark colored","devicon-amazonwebservices-plain-wordmark colored","devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
@@ -56,6 +62,7 @@ export default {
           subtitle: "Schedule gifts and birthday reminders",
           site: "App Store",
           url: "https://apps.apple.com/us/app/birthpay/id1575770355",
+          social: [{url: "https://instagram.com/birthpay_app", icon: "fa fa-instagram"}, {url: "https://twitter.com/birthpay_app", icon: "fa fa-twitter"}],
           description:
               "iOS app",
           skills: ["devicon-swift-plain-wordmark colored","devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored","devicon-heroku-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored","devicon-redis-plain-wordmark colored","devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
@@ -68,6 +75,7 @@ export default {
           subtitle: "Turn your Instagram posts into NFTs, for free",
           site: "",
           url: "https://www.inftsta.com",
+          social: [{url: "https://twitter.com/inftsta", icon: "fa fa-twitter"}],
           description:
               "Web3 Ethereum Dapp",
           skills: [ "devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored", "devicon-heroku-plain-wordmark colored", "devicon-facebook-plain colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored", "devicon-bootstrap-plain-wordmark colored", "devicon-javascript-plain colored", "devicon-jquery-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored"]
@@ -80,6 +88,7 @@ export default {
           subtitle: "NCAA plays of the week",
           site: "",
           url: "https://playoftheweek.com",
+          social: [{url: "https://instagram.com/theplayoftheweek", icon: "fa fa-instagram"}],
           description:
               "Website",
           skills: ["devicon-vuejs-plain-wordmark colored", "devicon-yarn-plain-wordmark colored\"", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored", "devicon-javascript-plain colored" ]
@@ -92,6 +101,7 @@ export default {
           subtitle: "Golf Jerseys",
           site: "",
           url: "https://gerseyz.com",
+          social: [{url: "https://instagram.com/gerseyz", icon: "fa fa-instagram"}],
           description:
               "Shopify Store",
           skills: ["fa fa-instagram"]
@@ -178,12 +188,35 @@ ul {
 }
 
 a{
-  color: #e853e7;
+  /*color: #e853e7;*/
   text-decoration: none;
 }
 
-a:hover{
-  color:cyan;
+/*a:hover{*/
+/*  color:cyan;*/
+
+/*}*/
+
+fa-twitter:hover, .fa-instagram:hover{
+  color:#e853e7;
 
 }
+
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-twitter{
+  color: #55acee;
+}
+
+.fa-twitter:hover{
+  color: #55acee;
+}
+
+
 </style>
