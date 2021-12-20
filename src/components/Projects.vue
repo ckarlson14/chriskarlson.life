@@ -32,7 +32,6 @@
         </b-card>
       </b-link>
     </div>
-
   </div>
 </template>
 
@@ -123,7 +122,7 @@ export default {
           status: "current",
           logoFile: "/assets/hackerComments.png",
           name: "HackerComments",
-          subtitle: "Open a hackerNews articles comment section after clicking through to the page",
+          subtitle: "Open a hackerNews article's comment section after clicking through to the page",
           site: "",
           url: "https://chrome.google.com/webstore/detail/hacker-comments/didaegjbjcalcoiiiioecmkcfchhjanc?hl=en&authuser=1",
           description:
@@ -188,14 +187,8 @@ ul {
 }
 
 a{
-  /*color: #e853e7;*/
   text-decoration: none;
 }
-
-/*a:hover{*/
-/*  color:cyan;*/
-
-/*}*/
 
 fa-twitter:hover, .fa-instagram:hover{
   color:#e853e7;
