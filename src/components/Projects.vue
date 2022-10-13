@@ -46,11 +46,11 @@ export default {
         logoFile: "/assets/clipsaver.png",
         name: "ClipSaver",
         subtitle: "Save and discover haircuts",
-        site: "App Store",
-        url: "https://apps.apple.com/us/app/clipsaver/id1643980057",
+        site: "Join",
+        url: "https://www.clipsaver.app/join",
         social: [{url: "https://www.instagram.com/clipsaver.app", icon: "fa fa-instagram"}],
         description:
-            "iOS app",
+            "iOS/Android app",
         skills: ["devicon-react-original-wordmark colored","devicon-nodejs-plain-wordmark colored","devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored","devicon-mongodb-plain-wordmark colored","devicon-heroku-plain-wordmark colored", "devicon-amazonwebservices-plain-wordmark colored"]
       },{
         id: "2",
