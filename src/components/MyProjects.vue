@@ -48,7 +48,7 @@ export default {
         subtitle: "see who's free to hang out",
         site: "Join",
         url: "https://weekof.app/join",
-        social: [{url: "https://twitter.com/weekof", icon: "fa fa-twitter"}],
+        social: [{url: "https://twitter.com/weekofapp", icon: "fa fa-twitter"}],
         description:
             "iOS app",
         skills: ["devicon-react-original-wordmark colored","devicon-nodejs-plain-wordmark colored","devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored","devicon-mongodb-plain-wordmark colored","devicon-heroku-plain-wordmark colored"]
