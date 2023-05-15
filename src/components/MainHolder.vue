@@ -9,29 +9,29 @@
         <a class="item top" v-on:click="scrollTo(item)">{{item}}</a>
       </nav>
     </div>
-    <Me></Me>
-    <Projects></Projects>
-    <Skills></Skills>
-    <Social></Social>
-    <Footer></Footer>
+    <MeComponent></MeComponent>
+    <MyProjects></MyProjects>
+    <MySkills></MySkills>
+    <SocialAccounts></SocialAccounts>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-import Me from "@/components/Me";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Social from "@/components/Social";
-import Footer
-  from "@/components/Footer";
+import MeComponent from "@/components/MeComponent";
+import MyProjects from "@/components/MyProjects";
+import MySkills from "@/components/MySkills";
+import SocialAccounts from "@/components/SocialAccounts";
+import FooterComponent
+  from "@/components/FooterComponent";
 export default {
-  name: 'Main',
+  name: 'MainHolder',
   components: {
-    Me,
-    Projects,
-    Social,
-    Skills,
-    Footer
+    MeComponent,
+    MyProjects,
+    SocialAccounts,
+    MySkills,
+    FooterComponent
   },
   data() {
     return{

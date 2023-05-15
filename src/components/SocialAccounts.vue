@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "Social.vue"
+  name: "SocialAccounts.vue"
 }
 </script>
 

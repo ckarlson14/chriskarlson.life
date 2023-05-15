@@ -2,7 +2,7 @@
   "name": "chriskarlson",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --legacy-peer-deps",
     "lint": "vue-cli-service lint"
@@ -16,13 +16,14 @@
     "vue-router": "^3.5.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
     "@vue/cli-plugin-router": "^5.0.8",
     "@vue/cli-service": "^5.0.8",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint": "^8.40.0",
+    "eslint-plugin-vue": "^9.12.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -35,7 +36,7 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser"
     },
     "rules": {}
   },

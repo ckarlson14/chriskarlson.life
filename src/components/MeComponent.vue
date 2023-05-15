@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Me",
+  name: "MeComponent",
   methods: {
     sayHi: function() {
       window.alert('Hi back. Now do it in real life.')
