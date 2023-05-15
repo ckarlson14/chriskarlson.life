@@ -43,6 +43,18 @@ export default {
       projects:  [{
         id: "1",
         status: "current",
+        logoFile: "/assets/weekof.png",
+        name: "WeekOf",
+        subtitle: "see who's free to hang out",
+        site: "Join",
+        url: "https://weekof.app/join",
+        social: [{url: "https://twitter.com/weekof", icon: "fa fa-twitter"}],
+        description:
+            "iOS app",
+        skills: ["devicon-react-original-wordmark colored","devicon-nodejs-plain-wordmark colored","devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored","devicon-mongodb-plain-wordmark colored","devicon-heroku-plain-wordmark colored"]
+      },{
+        id: "2",
+        status: "current",
         logoFile: "/assets/clipsaver.png",
         name: "ClipSaver",
         subtitle: "Save and discover haircuts",
@@ -53,7 +65,7 @@ export default {
             "iOS/Android app",
         skills: ["devicon-react-original-wordmark colored","devicon-nodejs-plain-wordmark colored","devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored","devicon-mongodb-plain-wordmark colored","devicon-heroku-plain-wordmark colored", "devicon-amazonwebservices-plain-wordmark colored"]
       },{
-        id: "2",
+        id: "3",
         status: "current",
         logoFile: "/assets/ghoulchat.png",
         name: "ghoulchat",
@@ -66,7 +78,7 @@ export default {
         skills: ["devicon-swift-plain-wordmark colored","devicon-nodejs-plain-wordmark colored","devicon-express-original-wordmark colored", "devicon-socketio-original-wordmark colored", "devicon-redis-plain-wordmark colored","devicon-mongodb-plain-wordmark colored","devicon-heroku-plain-wordmark colored"]
       },
       {
-        id: "3",
+        id: "4",
         status: "current",
         logoFile: "/assets/wewake.png",
         name: "weWake",
@@ -79,7 +91,7 @@ export default {
         skills: ["devicon-swift-plain-wordmark colored","devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored","devicon-sqlalchemy-original-wordmark colored","devicon-amazonwebservices-plain-wordmark colored","devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
       },
         {
-          id: "4",
+          id: "5",
           status: "current",
           logoFile: "/assets/birthpay.png",
           name: "birthpay",
@@ -92,7 +104,7 @@ export default {
           skills: ["devicon-swift-plain-wordmark colored","devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored","devicon-heroku-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored","devicon-redis-plain-wordmark colored","devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
         },
         {
-          id: "5",
+          id: "6",
           status: "current",
           logoFile: "/assets/iNFTsta.png",
           name: "iNFTsta",
@@ -105,7 +117,7 @@ export default {
           skills: [ "devicon-python-plain-wordmark colored","devicon-flask-original-wordmark colored", "devicon-heroku-plain-wordmark colored", "devicon-facebook-plain colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored", "devicon-bootstrap-plain-wordmark colored", "devicon-javascript-plain colored", "devicon-jquery-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored"]
         },
         {
-          id: "6",
+          id: "7",
           status: "current",
           logoFile: "/assets/potw.png",
           name: "playoftheweek",
@@ -118,7 +130,7 @@ export default {
           skills: ["devicon-vuejs-plain-wordmark colored", "devicon-yarn-plain-wordmark colored\"", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored", "devicon-javascript-plain colored" ]
         },
         {
-          id: "7",
+          id: "8",
           status: "current",
           logoFile: "/assets/gerseyz.png",
           name: "GERSEYZ",
@@ -131,7 +143,7 @@ export default {
           skills: ["fa fa-instagram"]
         },
         {
-          id: "8",
+          id: "9",
           status: "current",
           logoFile: "/assets/openAll.png",
           name: "OpenAll",
@@ -143,7 +155,7 @@ export default {
           skills: ["devicon-google-plain-wordmark colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored", "devicon-javascript-plain colored"]
         },
         {
-          id: "9",
+          id: "10",
           status: "current",
           logoFile: "/assets/hackerComments.png",
           name: "HackerComments",
