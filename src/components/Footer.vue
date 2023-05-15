@@ -4,7 +4,7 @@
       Source <a href="https://github.com/ckarlson14/chriskarlson.life" target="_blank"><i class="fa fa-github"></i> </a>
     </div>
     <div class="small">
-      Made with<a href="https://vuejs.org/" target="_blank"><i class="devicon-vuejs-plain-wordmark colored m-2"></i></a>powered by <a href="https://netfify.com" target="_blank"> Netlify</a>
+      Made with<a href="https://vuejs.org/" target="_blank"><i class="devicon-vuejs-plain-wordmark colored m-2"></i></a>powered by <a href="https://netlify.com" target="_blank"> Netlify</a>
     </div>
   </div>
 </template>
