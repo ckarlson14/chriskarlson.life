@@ -40,6 +40,18 @@ export default {
       projects: [{
         id: "1",
         status: "current",
+        logoFile: "/assets/ghoulchat.png",
+        name: "ghoulchat",
+        subtitle: "Anonymous group chats",
+        site: "App Store",
+        url: "https://apps.apple.com/us/app/ghoulchat/id1607021397",
+        social: [{ url: "https://twitter.com/ghoulchatapp", icon: "fa fa-twitter" }],
+        description:
+          "iOS app",
+        skills: ["devicon-swift-plain-wordmark colored", "devicon-nodejs-plain-wordmark colored", "devicon-express-original-wordmark colored", "devicon-socketio-original-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-mongodb-plain-wordmark colored", "devicon-heroku-plain-wordmark colored"]
+      }, {
+        id: "2",
+        status: "current",
         logoFile: "/assets/secondtap.png",
         name: "SecondTap",
         subtitle: "tap as close to the second as you can",
@@ -50,7 +62,7 @@ export default {
           "iOS game",
         skills: ["devicon-swift-plain-wordmark colored", "devicon-firebase-plain-wordmark colored", "devicon-nodejs-plain-wordmark colored", "devicon-express-original-wordmark colored"]
       }, {
-        id: "2",
+        id: "3",
         status: "current",
         logoFile: "/assets/weekof.png",
         name: "WeekOf",
@@ -62,7 +74,19 @@ export default {
           "iOS app",
         skills: ["devicon-react-original-wordmark colored", "devicon-nodejs-plain-wordmark colored", "devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-mongodb-plain-wordmark colored", "devicon-heroku-plain-wordmark colored"]
       }, {
-        id: "3",
+        id: "4",
+        status: "current",
+        logoFile: "/assets/birthpay.png",
+        name: "birthpay",
+        subtitle: "Schedule gifts and birthday reminders",
+        site: "App Store",
+        url: "https://apps.apple.com/us/app/birthpay/id1575770355",
+        social: [{ url: "https://instagram.com/birthpay_app", icon: "fa fa-instagram" }, { url: "https://twitter.com/birthpay_app", icon: "fa fa-twitter" }],
+        description:
+          "iOS app",
+        skills: ["devicon-swift-plain-wordmark colored", "devicon-python-plain-wordmark colored", "devicon-flask-original-wordmark colored", "devicon-heroku-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
+      }, {
+        id: "5",
         status: "current",
         logoFile: "/assets/clipsaver.png",
         name: "ClipSaver",
@@ -73,21 +97,9 @@ export default {
         description:
           "iOS/Android app",
         skills: ["devicon-react-original-wordmark colored", "devicon-nodejs-plain-wordmark colored", "devicon-express-original-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-mongodb-plain-wordmark colored", "devicon-heroku-plain-wordmark colored", "devicon-amazonwebservices-plain-wordmark colored"]
-      }, {
-        id: "4",
-        status: "current",
-        logoFile: "/assets/ghoulchat.png",
-        name: "ghoulchat",
-        subtitle: "Anonymous group chats",
-        site: "App Store",
-        url: "https://apps.apple.com/us/app/ghoulchat/id1607021397",
-        social: [{ url: "https://twitter.com/ghoulchatapp", icon: "fa fa-twitter" }],
-        description:
-          "iOS app",
-        skills: ["devicon-swift-plain-wordmark colored", "devicon-nodejs-plain-wordmark colored", "devicon-express-original-wordmark colored", "devicon-socketio-original-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-mongodb-plain-wordmark colored", "devicon-heroku-plain-wordmark colored"]
       },
       {
-        id: "5",
+        id: "6",
         status: "current",
         logoFile: "/assets/wewake.png",
         name: "weWake",
@@ -99,19 +111,7 @@ export default {
           "iOS app",
         skills: ["devicon-swift-plain-wordmark colored", "devicon-python-plain-wordmark colored", "devicon-flask-original-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-amazonwebservices-plain-wordmark colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
       },
-      {
-        id: "6",
-        status: "current",
-        logoFile: "/assets/birthpay.png",
-        name: "birthpay",
-        subtitle: "Schedule gifts and birthday reminders",
-        site: "App Store",
-        url: "https://apps.apple.com/us/app/birthpay/id1575770355",
-        social: [{ url: "https://instagram.com/birthpay_app", icon: "fa fa-instagram" }, { url: "https://twitter.com/birthpay_app", icon: "fa fa-twitter" }],
-        description:
-          "iOS app",
-        skills: ["devicon-swift-plain-wordmark colored", "devicon-python-plain-wordmark colored", "devicon-flask-original-wordmark colored", "devicon-heroku-plain-wordmark colored", "devicon-sqlalchemy-original-wordmark colored", "devicon-postgresql-plain-wordmark colored", "devicon-redis-plain-wordmark colored", "devicon-html5-plain-wordmark colored", "devicon-css3-plain-wordmark colored"]
-      },
+
       {
         id: "7",
         status: "current",

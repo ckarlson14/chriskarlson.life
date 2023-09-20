@@ -2,7 +2,7 @@
   <div class="hello" :ref="'Chris Karlson'">
     <h5> Chris Karlson</h5>
     <p class="mt-3">
-      I'm a self-taught software developer currently living in San Francisco who likes to build new things. I graduated from Brown University in 2018 with degrees in Engineering and Applied Math-Economics. Sometimes I <a class="pinkLink" href="https://chriskarlson.substack.com/" target="_blank"> write. </a> In my free time I like to take <a class="pinkLink" href="https://instagram.com/chrisfunpics" target="_blank"> pictures</a>, play, watch, and bet on sports, cook and eat food, and read books.
+      I'm a self-taught software developer currently living in New York City who likes to build new things. I graduated from Brown University in 2018 with degrees in Engineering and Applied Math-Economics. Sometimes I <a class="pinkLink" href="https://chriskarlson.substack.com/" target="_blank"> write. </a> In my free time I like to take <a class="pinkLink" href="https://instagram.com/chrisfunpics" target="_blank"> pictures</a>, play, watch, and bet on sports, cook and eat food, and read books.
     </p>
   </div>
 </template>
