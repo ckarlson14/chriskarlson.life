@@ -19,7 +19,7 @@
 
 <script>
 import MeComponent from "@/components/MeComponent";
-import MyProjects from "@/components/MyProjects";
+import MyProjects from "@/components/Projects/MyProjects";
 import MySkills from "@/components/MySkills";
 import SocialAccounts from "@/components/SocialAccounts";
 import FooterComponent

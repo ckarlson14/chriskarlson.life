@@ -1,9 +1,53 @@
+<!-- <template>
+  <div align="center">
+    <ProjectsSection title="What I'm working on" :projects="this.projects" />
+    <ProjectsSection title="Past" :projects="this.past" />
+  </div>
+</template> -->
+
 <template>
   <div align="center">
     <div class="titles">
       <h5>What I'm working on</h5>
     </div>
     <div v-for="(item, index) in this.projects" :key="index">
+      <b-link :to="item.url" target="_blank">
+        <b-card no-body style="display: inline-flex" class="m-2 projects">
+          <b-card-body>
+            <b-card-text :to="item.url" class="logoLink body" target="_blank">
+              <img :src="item.logoFile" class="logo" />
+              <span class="title">
+                {{ item.name }}
+                <span v-for="(social, i) in item.social" :key="i" class="m-1">
+                  <a
+                    :href="social.url"
+                    target="_blank"
+                    :class="social.icon"
+                  ></a>
+                </span>
+              </span>
+            </b-card-text>
+            <div class="text-muted ml-3 body">{{ item.description }}</div>
+            <div class="card-text ml-3 body">{{ item.subtitle }}</div>
+            <b-card-text>
+              <ul class="projectSkills body">
+                <li
+                  class="projectSkills"
+                  v-for="(item, key) in item.skills"
+                  :key="key"
+                >
+                  <i :class="item"></i>
+                </li>
+              </ul>
+            </b-card-text>
+          </b-card-body>
+        </b-card>
+      </b-link>
+    </div>
+    <div class="titles">
+      <h5>Past</h5>
+    </div>
+    <div v-for="(item, index) in this.past" :key="index">
       <b-link :to="item.url" target="_blank">
         <b-card no-body style="display: inline-flex" class="mt-3 projects">
           <b-card-body>
@@ -41,7 +85,12 @@
 </template>
 
 <script>
+// import ProjectsSection from "./ProjectsSection.vue";
+
 export default {
+  components: {
+    // ProjectsSection,
+  },
   name: "MyProjects.vue",
   data() {
     return {
@@ -162,11 +211,46 @@ export default {
         {
           id: "6",
           status: "current",
+          logoFile: "/assets/openAll.png",
+          name: "OpenAll",
+          subtitle: "Open all your tabs from a folder in one click",
+          site: "",
+          url: "https://chrome.google.com/webstore/detail/openall/oggmebnpooffnoofbbcmgdogdpjcffpo?hl=en&authuser=1",
+          description: "Chrome Extension",
+          skills: [
+            "devicon-google-plain-wordmark colored",
+            "devicon-html5-plain-wordmark colored",
+            "devicon-css3-plain-wordmark colored",
+            "devicon-javascript-plain colored",
+          ],
+        },
+        {
+          id: "7",
+          status: "current",
+          logoFile: "/assets/hackerComments.png",
+          name: "HackerComments",
+          subtitle:
+            "Open a hackerNews article's comment section after clicking through to the page",
+          site: "",
+          url: "https://chrome.google.com/webstore/detail/hacker-comments/didaegjbjcalcoiiiioecmkcfchhjanc?hl=en&authuser=1",
+          description: "Chrome Extension",
+          skills: [
+            "devicon-google-plain-wordmark colored",
+            "devicon-html5-plain-wordmark colored",
+            "devicon-css3-plain-wordmark colored",
+            "devicon-javascript-plain colored",
+          ],
+        },
+      ],
+      past: [
+        {
+          id: "1",
+          status: "current",
           logoFile: "/assets/wewake.png",
           name: "weWake",
           subtitle: "Alarm clock for friends",
           site: "App Store",
-          url: "https://apps.apple.com/us/app/wewake/id1495745797",
+          url: "https://twitter.com/wewakeapp",
           social: [
             { url: "https://instagram.com/wewakeapp", icon: "fa fa-instagram" },
             { url: "https://twitter.com/wewakeapp", icon: "fa fa-twitter" },
@@ -184,13 +268,13 @@ export default {
         },
 
         {
-          id: "7",
+          id: "2",
           status: "current",
           logoFile: "/assets/iNFTsta.png",
           name: "iNFTsta",
           subtitle: "Turn your Instagram posts into NFTs, for free",
           site: "",
-          url: "https://www.inftsta.com",
+          url: "https://opensea.io/collection/inftsta",
           social: [
             { url: "https://twitter.com/inftsta", icon: "fa fa-twitter" },
           ],
@@ -211,51 +295,18 @@ export default {
         },
 
         {
-          id: "8",
+          id: "3",
           status: "current",
           logoFile: "/assets/gerseyz.png",
           name: "GERSEYZ",
           subtitle: "Golf Jerseys",
           site: "",
-          url: "https://gerseyz.com",
+          url: "https://instagram.com/gerseyz",
           social: [
             { url: "https://instagram.com/gerseyz", icon: "fa fa-instagram" },
           ],
           description: "Shopify Store",
           skills: ["fa fa-instagram"],
-        },
-        {
-          id: "9",
-          status: "current",
-          logoFile: "/assets/openAll.png",
-          name: "OpenAll",
-          subtitle: "Open all your tabs from a folder in one click",
-          site: "",
-          url: "https://chrome.google.com/webstore/detail/openall/oggmebnpooffnoofbbcmgdogdpjcffpo?hl=en&authuser=1",
-          description: "Chrome Extension",
-          skills: [
-            "devicon-google-plain-wordmark colored",
-            "devicon-html5-plain-wordmark colored",
-            "devicon-css3-plain-wordmark colored",
-            "devicon-javascript-plain colored",
-          ],
-        },
-        {
-          id: "10",
-          status: "current",
-          logoFile: "/assets/hackerComments.png",
-          name: "HackerComments",
-          subtitle:
-            "Open a hackerNews article's comment section after clicking through to the page",
-          site: "",
-          url: "https://chrome.google.com/webstore/detail/hacker-comments/didaegjbjcalcoiiiioecmkcfchhjanc?hl=en&authuser=1",
-          description: "Chrome Extension",
-          skills: [
-            "devicon-google-plain-wordmark colored",
-            "devicon-html5-plain-wordmark colored",
-            "devicon-css3-plain-wordmark colored",
-            "devicon-javascript-plain colored",
-          ],
         },
       ],
     };
