@@ -69,7 +69,7 @@ export default {
           ],
         },
         {
-          id: "4",
+          id: "2",
           status: "current",
           logoFile: "/assets/birthpay.png",
           name: "birthpay",
